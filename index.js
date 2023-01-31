@@ -10,7 +10,7 @@ server.on('request', function (peticion, respuesta) {
     var base = url.parse(peticion.url, true);
     var ext = path.extname(base.pathname);
     var folder;
-    // Comprobamos si el pathname apunta a la raíz para devolver el index.html
+    // Comprobamos el pathname
     var baseUrl;
     if (base.pathname == '/dni') {
         baseUrl = '/instrucciones.html';
